@@ -1,0 +1,10 @@
+<div class="card-container">
+    <div *ngIf="!isLoggedIn" class="card">
+        <span class="card-title">Login Form</span>
+        <input class="card-input" placeholder="Login" [(ngModel)]="login">
+        <input class="card-input" placeholder="Password" type="password" [(ngModel)]="password">
+        <div class="row align-items-center">
+            <button class="btn btn-primary" (click)="onFormSubmit()">Login</button>
+        </div>
+    </div>
+</div>
